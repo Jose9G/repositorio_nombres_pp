@@ -1,4 +1,5 @@
 package proyecto_parcial;
+import java.util.Date;
 import java.util.Scanner;
 public class Proyecto_Parcial {
     public static void main(String[] args) {
@@ -13,6 +14,9 @@ public class Proyecto_Parcial {
         String empleado;
         int horast;
         double tarifa_hora, sueldo_bruto, descuento, sueldo_neto;
+        
+        //OBTENEMOS LA FECHA ACTUAL DE LA EJECUCION
+        Date fecha_actual = new Date();
         
         //SOLICITUD DE DATOS CON VALORES INICIALIZADOS
         System.out.println("Ingrese nombre del Empleado: ");
@@ -32,5 +36,6 @@ public class Proyecto_Parcial {
         System.out.println("CUENTA CON UN SUELDO BRUTO DE: " + sueldo_bruto);
         System.out.println("DESCUENTO X ONP: " + descuento);
         System.out.println("SUELDO NETO FINAL: " + sueldo_neto);
+        System.out.println("EMPLEADO "+empleado+" REVISO SU SUELDO A LA FECHA Y HORA: " + fecha_actual);
     } 
 }
